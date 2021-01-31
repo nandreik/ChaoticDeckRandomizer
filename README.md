@@ -1,16 +1,25 @@
 # Chaotic Deck Randomizer
 
-# Video Demonstration
+### General Idea
+	I wanted to create an easy way to generate random decks to use in chaoticrecode.com for fun.
+	Hopefully people like it. 
 
+### Video Demonstration
 
-# Installation
+### Installation
 1) Go to https://github.com/nandreik/ChaoticDeckRandomizer/tree/executable
 2) Download and save Chaotic Randomizer.exe and chaotic.json to the same place on your computer
 2.2) For example, save them to the same folder on your desktop.
 3) Run Chaotic Randomizer.exe and it will create a file on your desktop called "chaotic_random_deck.txt"
 4) Import this file into chaoticrecode.com as an un-tap.in deck and save it under the unrestricted ruleset
 
-# Number of cards currently added in Recode (# added/# total) 
+### Bugs/Problems
+	If you encounter a bug with important a deck due to a card that is not added to recode, etc. 
+	Please message me on discord @Sirilean#4526 and send me that txt file of the deck.
+	
+	If you encouter any other problem trying to use this, also message me and I will try to help.
+
+### Number of cards currently added in Recode (# added/# total) 
 	THIS MAY NOT BE 100% ACCURATE, missing.txt from Chaotic discord is not fully updated
 	total added: 1083/1225
 	creatures: 427/475
@@ -32,7 +41,7 @@
 	locations: 115/146
 
 
-# General idea of randomization 
+### General idea of randomization 
        1) pick random creatures
            1.1) if creature is loyal, pick rest of creatures from same tribe 
            1.2) if creature is loyal and m'arrillian, pick rest of creatures from same tribe or minions
@@ -61,7 +70,7 @@
                5.2b) add any mugic with disregard for already chosen creatures tribe (would lead to higher chance to not be able cast mugic) 
 
 
-# Balancing
+### Balancing
        1) There may be balance problems when Loyal creatures are selected early in the process.
           This not only adds a (usually) very powerful creature to your random deck (ex: Chaor, Takinom, Ankhyja),
           but also ensures that the rest of the creatures to be randomly added are all the same tribe. 
