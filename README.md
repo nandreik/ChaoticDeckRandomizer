@@ -32,10 +32,10 @@
 		Gen: 4/4
 	battlegear: 126/155
 	attacks: 252/260
-	mugic: 161/189
+	mugic: 160/189
 		UW: 26/32
 		OW: 31/34
-		D: 29/32
+		D: 28/32
 		Mip: 28/33
 		M'ar: 10/13
 		Gen: 37/45
