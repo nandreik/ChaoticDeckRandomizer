@@ -1,16 +1,14 @@
 # Chaotic Deck Randomizer
 
+# Video Demonstration
+
+
 # Installation
 1) Go to https://github.com/nandreik/ChaoticDeckRandomizer/tree/executable
 2) Download and save Chaotic Randomizer.exe and chaotic.json to the same place on your computer
 2.2) For example, save them to the same folder on your desktop.
 3) Run Chaotic Randomizer.exe and it will create a file on your desktop called "chaotic_random_deck.txt"
 4) Import this file into chaoticrecode.com as an un-tap.in deck and save it under the unrestricted ruleset
-
-
-
-
-
 
 # Number of cards currently added in Recode (# added/# total) 
 	THIS MAY NOT BE 100% ACCURATE, missing.txt from Chaotic discord is not fully updated
