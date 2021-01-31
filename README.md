@@ -1,25 +1,25 @@
 # ChaoticDeckRandomizer
 
- Number of cards currently added in Recode (# added/# total) 
-    ***THIS MAY NOT BE 100% ACCURATE, missing.txt from Chaotic discord is not fully updated***
-    # total added: 1083/1225
-        # creatures: 427/475
+  Number of cards currently added in Recode (# added/# total) 
+    THIS MAY NOT BE 100% ACCURATE, missing.txt from Chaotic discord is not fully updated
+    total added: 1083/1225
+        creatures: 427/475
             UW: 100/110
             OW: 111/120
             D: 81/92
             Mip: 92/96
             M'ar: 39/53
             Gen: 4/4
-        # battlegear: 126/155
-        # attacks: 252/260
-        # mugic: 161/189
+         battlegear: 126/155
+         attacks: 252/260
+         mugic: 161/189
             UW: 26/32
             OW: 31/34
             D: 29/32
             Mip: 28/33
             M'ar: 10/13
             Gen: 37/45
-        # locations: 115/146
+         locations: 115/146
 
 
     General idea of randomization 
