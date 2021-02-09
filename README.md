@@ -4,7 +4,7 @@
 	I wanted to create an easy way to generate random decks to use in chaoticrecode.com for fun.
 	Hopefully people like it. 
 
-### Video Demonstration
+### Video Demonstration/Installation Guide
 https://youtu.be/y8HS56zQqSo
 
 ### Installation
