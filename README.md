@@ -8,7 +8,7 @@
 https://youtu.be/y8HS56zQqSo
 
 ### Installation
-1) https://github.com/nandreik/ChaoticDeckRandomizer/releases/tag/1.3
+1) https://github.com/nandreik/ChaoticDeckRandomizer/releases/tag/1.4
 2) Download and save Chaotic Randomizer.exe and chaotic.json to the same place on your computer 
 
    For example, save them to the same folder on your desktop.
