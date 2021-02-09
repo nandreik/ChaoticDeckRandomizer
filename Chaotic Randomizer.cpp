@@ -23,7 +23,7 @@ using namespace std;
 
     Number of cards currently added in Recode (# added/# total) 
     ***THIS MAY NOT BE 100% ACCURATE, missing.txt from Chaotic discord is not fully updated***
-    # total added: 1081/1225
+    # total added: 1079/1225
         # creatures: 434/484
             UW: 100/111
             OW: 111/121
@@ -32,12 +32,12 @@ using namespace std;
             M'ar: 39/53
             Gen: 4/4
         # battlegear: 126/155
-        # attacks: 251/266
-        # mugic: 160/189
+        # attacks: 250/266
+        # mugic: 159/189
             UW: 26/32
             OW: 31/34
             D: 28/32
-            Mip: 28/33
+            Mip: 27/33
             M'ar: 10/13
             Gen: 37/45
         # locations: 115/146
@@ -218,7 +218,6 @@ vector<string> get_tribes(const Document& d, vector<string> creatures) {    //ge
 }
 
 string pick_tribe() { //randomly pick a tribe to use for the first random creature to give fairer chance for each tribe to be chosen
-    //475 total creatures with 4 being generic, give very small chance for first creature to be generic
     //19.4% chance for each tribe + 4% for generic = 100%
     double random = get_random(0.0, 100.0);
     std::cout << random << endl;
@@ -456,56 +455,56 @@ vector<string> get_locations(const Document& d, vector<string> creatures) {
                 card_itr = d["locations"][itr->name.GetString()].FindMember("unique");
                 unique = card_itr->value.GetString(); //is card unique 
 
-                if (added == "1") {   //if current card is in recode, try to add card to locations 
-                    int duplicates = 0; //count for tracking copies of current card already in locations 
+if (added == "1") {   //if current card is in recode, try to add card to locations 
+    int duplicates = 0; //count for tracking copies of current card already in locations 
 
-                    //check for more than one copy of card and if at least one is Unique
-                    for (string loc : locations) { //check if base card name is already in locations (ex: Glacier Plains and Glacier Plans, M'arrillian Melting Camp are both considered "Glacier Plains")
-                        string loc_parsed = parse_name(loc);
+    //check for more than one copy of card and if at least one is Unique
+    for (string loc : locations) { //check if base card name is already in locations (ex: Glacier Plains and Glacier Plans, M'arrillian Melting Camp are both considered "Glacier Plains")
+        string loc_parsed = parse_name(loc);
 
-                        if (loc_parsed == card_parsed) {   //if card with same base name in locations, check if that card is unique 
-                            Value::ConstMemberIterator check_unique = d["locations"][loc.c_str()].FindMember("unique");
-                            string loc_unique = check_unique->value.GetString();
+        if (loc_parsed == card_parsed) {   //if card with same base name in locations, check if that card is unique 
+            Value::ConstMemberIterator check_unique = d["locations"][loc.c_str()].FindMember("unique");
+            string loc_unique = check_unique->value.GetString();
 
-                            if (loc_unique == "1" || unique == "1") { //if card in locations is unique or current card is unique, dont add current card 
-                                std::cout << "\tLOCATION: more than one copy of card and at least one is Unique" << endl;
-                                dont_add = true;
-                                break;
-                            }      
-                            duplicates++; //increase # of copies of current card in locations
-                        }
-                    }
+            if (loc_unique == "1" || unique == "1") { //if card in locations is unique or current card is unique, dont add current card 
+                std::cout << "\tLOCATION: more than one copy of card and at least one is Unique" << endl;
+                dont_add = true;
+                break;
+            }
+            duplicates++; //increase # of copies of current card in locations
+        }
+    }
 
-                    if (duplicates <= 1 && dont_add == false) {   //if there is at most 1 duplicate already in locations, add card
-                        //std::cout << "\tLOCATION: added" << endl;
-                        locations.push_back(card);
-                        loc_count++;
-                    }
+    if (duplicates <= 1 && dont_add == false) {   //if there is at most 1 duplicate already in locations, add card
+        //std::cout << "\tLOCATION: added" << endl;
+        locations.push_back(card);
+        loc_count++;
+    }
 
-                    else if (duplicates >= 2) {  //else there are already 2 copies of the card, so dont add
-                        //std::cout << "\tLOCATION: 2 copies aleady" << endl;
-                        dont_add = true;
-                        break;
-                    }
-                }
+    else if (duplicates >= 2) {  //else there are already 2 copies of the card, so dont add
+        //std::cout << "\tLOCATION: 2 copies aleady" << endl;
+        dont_add = true;
+        break;
+    }
+}
 
-                else {  //current card is not added in recode
-                    //std::cout << "\tLOCATION: not in recode" << endl;
-                    dont_add = true;
-                    break;
-                }
+else {  //current card is not added in recode
+    //std::cout << "\tLOCATION: not in recode" << endl;
+    dont_add = true;
+    break;
+}
             }
 
             if (dont_add)   //if dont_add is triggered to be true, break out of loop for current card and find another random card to add
                 break;
-            else 
+            else
                 count++;    //increase # of cards looked through before reaching the random card
         }
     }
     //print locations 
     std::cout << "\n\tLOCATIONS" << endl;
     int c = 1;
-    for (auto l : locations) 
+    for (auto l : locations)
         std::cout << "\t" << c++ << ": " << l << endl;
     return locations;
 }
@@ -525,9 +524,10 @@ vector<string> get_attacks(const Document& d, vector<string> creatures) { //ther
         attacks.push_back("Rage of Aa'une");
         oneBP_count++;
         attack_count++;
-        total_bp+=1;
+        total_bp += 1;
     }
 
+    cout << "LOYALTY " << creatures[6] << endl;
     while (attack_count < 20) {    // until 20 attacks are picked 
         int random = get_random(0, 265); // gen a random number from 0 to 265 (266 total attacks)
         //std::cout << "Random: " << random << endl;
@@ -540,7 +540,7 @@ vector<string> get_attacks(const Document& d, vector<string> creatures) { //ther
             if (count == random) { //stop when the random card is reached
                 //get card attribs 
                 string card, added, unique, elements, disciplines;
-                int bp; 
+                int bp;
                 card = itr->name.GetString(); //full card name 
                 Value::ConstMemberIterator card_itr = d["attacks"][card.c_str()].FindMember("added");
                 added = card_itr->value.GetString(); //is card in recode 
@@ -548,11 +548,12 @@ vector<string> get_attacks(const Document& d, vector<string> creatures) { //ther
                 unique = card_itr->value.GetString(); //is card unique 
                 card_itr = d["attacks"][card.c_str()].FindMember("bp");
                 bp = stoi(card_itr->value.GetString()); //get attack's build point cost
-                card_itr = d["attacks"][card.c_str()].FindMember("elements"); 
+                card_itr = d["attacks"][card.c_str()].FindMember("elements");
                 elements = card_itr->value.GetString(); //get attacks elements, if any
                 card_itr = d["attacks"][card.c_str()].FindMember("disciplines");
                 disciplines = card_itr->value.GetString(); ///get attacks stats, if any
                 //std::cout << card << ", " << bp << endl;
+
 
                 //check if army loyalty matches attack (ex: OW loyalty needed in order to add Force Balls)
                 if (card == "Force Balls") {

@@ -4460,11 +4460,12 @@
       "minion": "0",
       "elements": "air",
       "disciplines": {
-        "courage":50,
-        "power":65,
-        "wisdom":35,
-        "speed":40
-      }
+        "courage": 50,
+        "power": 65,
+        "wisdom": 35,
+        "speed": 40
+      },
+      "notes":  "DNE"
     },
     "Tassanil": {
       "unique": "1",
@@ -5300,11 +5301,12 @@
       "minion": "0",
       "elements": "",
       "disciplines": {
-        "courage":50,
-        "power":25,
-        "wisdom":60,
-        "speed":20
-      }
+        "courage": 50,
+        "power": 25,
+        "wisdom": 60,
+        "speed": 20
+      },
+      "notes" :  "DNE"
     },
     "Kojjbel": {
       "unique": "0",
@@ -8473,9 +8475,10 @@
     "Nexdoors": {
       "unique": "0",
       "bp": "0",
-      "added": "1",
+      "added": "0",
       "elements": "a",
-      "disciplines": ""
+      "disciplines": "",
+      "notes":  "DNE"
     },
     "Outsmart": {
       "unique": "0",
@@ -10660,8 +10663,9 @@
     },
     "Song of Transportation": {
       "unique": "0",
-      "added": "1",
-      "tribe": "mipedian"
+      "added": "0",
+      "tribe": "mipedian",
+      "notes" :  "DNE"
     },
     "Strain of Expensive Delusions": {
       "unique": "1",
