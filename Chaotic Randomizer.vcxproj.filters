@@ -39,4 +39,9 @@
       <Filter>Source Files\rapidjson</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="chaotic.json">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>
