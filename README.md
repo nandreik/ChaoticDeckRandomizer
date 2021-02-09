@@ -23,7 +23,7 @@ https://youtu.be/y8HS56zQqSo
 
 ### Number of cards currently added in Recode (# added/# total) 
 	THIS MAY NOT BE 100% ACCURATE, missing.txt from Chaotic discord is not fully updated
-	total added: 1086/1240
+	total added: 1079/1225
         creatures: 434/484
             UW: 100/111
             OW: 111/121
@@ -32,12 +32,12 @@ https://youtu.be/y8HS56zQqSo
             M'ar: 39/53
             Gen: 4/4
         battlegear: 126/155
-        attacks: 251/266
-        mugic: 160/189
+        attacks: 250/266
+        mugic: 159/189
             UW: 26/32
             OW: 31/34
             D: 28/32
-            Mip: 28/33
+            Mip: 27/33
             M'ar: 10/13
             Gen: 37/45
         locations: 115/146
