@@ -8,12 +8,12 @@
 https://youtu.be/y8HS56zQqSo
 
 ### Installation
-	1) https://github.com/nandreik/ChaoticDeckRandomizer/releases/tag/1.3
-	2) Download and save Chaotic Randomizer.exe and chaotic.json to the same place on your computer 
+1) https://github.com/nandreik/ChaoticDeckRandomizer/releases/tag/1.3
+2) Download and save Chaotic Randomizer.exe and chaotic.json to the same place on your computer 
 
-	   For example, save them to the same folder on your desktop.
-	3) Run Chaotic Randomizer.exe and it will create a file on your desktop called "chaotic_random_deck.txt"
-	4) Import this file into chaoticrecode.com as an un-tap.in deck and save it under the unrestricted ruleset
+   For example, save them to the same folder on your desktop.
+3) Run Chaotic Randomizer.exe and it will create a file on your desktop called "chaotic_random_deck.txt"
+4) Import this file into chaoticrecode.com as an un-tap.in deck and save it under the unrestricted ruleset
 
 ### Bugs/Problems
 	If you encounter a bug with important a deck due to a card that is not added to recode, etc. 
