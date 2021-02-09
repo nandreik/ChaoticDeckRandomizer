@@ -5,7 +5,7 @@
 	Hopefully people like it. 
 
 ### Video Demonstration/Installation Guide
-	https://youtu.be/y8HS56zQqSo
+https://youtu.be/y8HS56zQqSo
 
 ### Installation
 	1) https://github.com/nandreik/ChaoticDeckRandomizer/releases/tag/1.3
